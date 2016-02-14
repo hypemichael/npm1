@@ -1,6 +1,7 @@
 var http = require("http");
-
-http.createServer(function(req,res){
+var port = process.env.PORT || 3000;
+var app = http.createServer(function(req,res){
   console.log("hello");
 res.end("hello");
-}).listen(5000);
+})
+app.listen(port);
