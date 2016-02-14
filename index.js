@@ -1,7 +1,6 @@
 var http = require("http");
 
-http.createSever(function(req,res){
+http.createServer(function(req,res){
   console.log("hello");
 res.end("hello");
-})
-http.listen(5000);
+}).listen(5000);
